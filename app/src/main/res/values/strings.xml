@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">社微</string>
+    <string-array name="spingarr">
+        <item>请选择所在学校</item>
+        <item>南宁学院</item>
+        <item>广西大学</item>
+        <item>广西民族大学</item>
+        <item>广西外国语学校</item>
+        <item>梧州学院</item>
+        <item>北部湾大学</item>
+        <item>广西医科大学</item>
+        <item>广西中医药大学</item>
+        <item>广西师范大学</item>
+        <item>桂林理工大学</item>
+        <item>广西科技大学</item>
+    </string-array>
+    <string-array name="type">
+        <item>请选择帮手类型</item>
+        <item>电脑维修</item>
+        <item>系统安装</item>
+        <item>软件安装 </item>
+        <item>路由配置</item>
+        <item>硬件维修</item>
+        <item>其他</item>
+    </string-array>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tab_menu_alert">首页</string>
+    <string name="tab_menu_profile">订单</string>
+    <string name="tab_menu_pay">最近</string>
+    <string name="tab_menu_setting">我的</string>
+
+    <string name="tab_menu_alert1">代领快递</string>
+    <string name="tab_menu_profile1">代寄快递</string>
+    <string name="tab_menu_pay1">代购商品</string>
+    <string name="tab_menu_setting1">电脑帮手</string>
+</resources>

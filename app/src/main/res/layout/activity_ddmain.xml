@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.example.administrator.cyzapp.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_topbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/acimgbtddback"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/back"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="发布订单"
+                    android:textSize="25dp"
+                    android:layout_marginRight="40dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ly_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="20px"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/DL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_channel1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_menu_alert1"
+            android:textColor="@drawable/tab_menu_text1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/DJ"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_message1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_menu_profile1"
+            android:textColor="@drawable/tab_menu_text1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/DG"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_better1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_menu_pay1"
+            android:textColor="@drawable/tab_menu_text1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/DN"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/tab_menu_setting1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_menu_setting1"
+            android:textColor="@drawable/tab_menu_text1"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/ly_tab_bar"
+        android:background="@color/div_white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@id/ly_top_bar">
+
+    </FrameLayout>
+</ScrollView>
+</LinearLayout>

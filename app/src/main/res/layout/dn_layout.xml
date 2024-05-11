@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    android:layout_marginLeft="5px"
+    android:layout_marginRight="5px"
+    android:weightSum="1"
+    tools:context="com.example.administrator.cyzapp.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:background="#E0E0E0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb1_1"/>
+
+
+            <Spinner
+                android:id="@+id/dnspinerdnsw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/type"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:layout_marginTop="50px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb1_1" />
+
+            <EditText
+                android:id="@+id/dnetdz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="所在地址"
+                android:background="@null"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb1_1" />
+
+            <EditText
+                android:id="@+id/dnetphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="联系方式"
+                android:background="@null"
+                android:inputType="number"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:layout_marginTop="50px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb1_1" />
+
+            <EditText
+                android:id="@+id/dnettime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="服务时间"
+                android:background="@null"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb1_1" />
+
+            <EditText
+                android:id="@+id/dnetbzly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="备注留言"
+                android:background="@null"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginTop="60px"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:gravity="bottom"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="小费"
+            android:textSize="20dp"
+            android:paddingTop="20px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16px"/>
+        <TextView
+            android:layout_width="0px"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textSize="20dp"
+            android:textColor="#FF7F00"
+            android:layout_marginLeft="-20px"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/dnetxf"
+            android:layout_width="0px"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:hint="请输入赏金"
+            android:background="@null"
+            android:inputType="number"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/dnbtok"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            android:background="#FF7F00"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:textSize="50px"
+    android:id="@+id/itemtexttitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="代领快递"
+    android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/dlimg"
+            android:layout_width="250px"
+            android:layout_height="300px"
+            android:id="@+id/itemimg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/itemtexttime"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="下单时间：2018-01-06 12：12"/>
+            <TextView
+                android:id="@+id/itemtextshdz"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="男生宿舍六栋"/>
+            <TextView
+                android:id="@+id/itemtextxf"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="￥1"/>
+
+           <Button
+             android:id="@+id/itemdel"
+          android:layout_gravity="right"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="删除订单"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

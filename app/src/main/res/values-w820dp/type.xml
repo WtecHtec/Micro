@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>电脑维修</item>
+        <item>系统安装</item>
+        <item>软件安装 </item>
+        <item>路由配置</item>
+        <item>硬件维修</item>
+    </string-array>
+</resources>
